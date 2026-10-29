@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMANI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- 1. TELA INICIAL -->
+
+    <div id="telaInicial">
+      <div id="menuOpcoes">
+        <button id="botaoIniciar" class="opcaoMenu">
+          <span class="losango">
+            <span class="losangoInterno"></span>
+          </span>
+          <span class="nomeOpcao">INICIAR</span>
+        </button>
+
+        <button id="botaoControles" class="opcaoMenu">
+          <span class="losango">
+            <span class="losangoInterno"></span>
+          </span>
+          <span class="nomeOpcao">CONTROLES</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 2. TELA DE CONTROLES -->
+
+    <div id="telaControles">
+      <div class="painelControles">
+        <h1>CONTROLES</h1>
+
+        <p class="subtituloControles">Domine seus movimentos.</p>
+
+        <div class="listaControles">
+          <div class="controleItem">
+            <span>MOVIMENTAR</span>
+            <strong>← → / A D</strong>
+          </div>
+
+          <div class="controleItem">
+            <span>PULAR</span>
+            <strong>↑ / W / Z / J</strong>
+          </div>
+
+          <div class="controleItem">
+            <span>ATACAR</span>
+            <strong>K / X / ESPAÇO</strong>
+          </div>
+
+          <div class="controleItem">
+            <span>RESSONÂNCIA</span>
+            <strong>R</strong>
+          </div>
+        </div>
+
+        <button id="botaoVoltarMenu">◇ VOLTAR</button>
+      </div>
+    </div>
+
+    <!-- INTRODUÇÃO DA HISTÓRIA -->
+
+    <div id="telaIntroducao">
+      <p id="textoIntroducao">Era para ser apenas mais uma recuperação.</p>
+    </div>
+
+    <!-- 3. ÁREA DO JOGO -->
+
+    <div id="jogo">
+      <!-- CENÁRIO DA PRIMEIRA CAMADA -->
+      <div id="cenario">
+        <!-- Imagem principal -->
+        <div id="fundoCidade"></div>
+
+        <!-- Elementos que serão adicionados depois -->
+        <div id="detalhesCenario"></div>
+        <!-- VESTÍGIO MISTERIOSO DA FLORESTA -->
+        <div id="vestigioFinal"></div>
+
+        <!-- Área da Ruptura -->
+        <div id="camadaRuptura">
+          <div id="ruptura">
+            <div class="fenda fenda1"></div>
+            <div class="fenda fenda2"></div>
+            <div class="fenda fenda3"></div>
+          </div>
+          <!-- Bordas da realidade -->
+          <div class="bordaRuptura"></div>
+        </div>
+      </div>
+
+      <!-- HUD DA IMANI -->
+
+      <div id="hud">
+        <span>IMANI</span>
+
+        <div id="vida">🤍🤍🤍</div>
+
+        <!-- BARRA DE RESSONÂNCIA -->
+
+        <div id="hudRessonancia">
+          <span>RESSONÂNCIA</span>
+
+          <div id="barraRessonancia">
+            <div id="energiaRessonancia"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BARRA DE VIDA DO MINI-CHEFE -->
+
+      <div id="hudChefe">
+        <span id="nomeChefe">VÉU DESCONHECIDO</span>
+
+        <div id="barraVidaChefe">
+          <div id="vidaChefePreenchimento"></div>
+        </div>
+      </div>
+
+      <!-- DIÁLOGO DO SEGUNDO VÉU -->
+
+      <div id="dialogoVeu">
+        <span id="nomeVeu">VÉU DESCONHECIDO</span>
+        <p id="textoVeu"></p>
+      </div>
+
+      <!-- CHÃO -->
+
+      <div id="chao"></div>
+
+      <!-- PERSONAGEM IMANI -->
+
+      <div id="imani">
+        <!-- Ataque com a Nahara -->
+        <div id="ataque"></div>
+
+        <!-- Habilidade especial Ressonância -->
+        <div id="ressonancia"></div>
+      </div>
+
+      <!-- INIMIGO -->
+
+      <div id="inimigo">
+        <div id="ataqueInimigo"></div>
+      </div>
+
+      <!-- FRAGMENTO DA ALMA -->
+      <div id="fragmentoAlma"></div>
+
+      <!--  MENSAGEM DE COLETA CINEMATOGRÁFICA -->
+
+      <div id="mensagemColeta">
+        <!-- FRAGMENTO DOURADO -->
+        <div id="iconeFragmento">
+          <div class="cristalFragmento"></div>
+        </div>
+
+        <!-- TEXTO DA COLETA -->
+        <div id="textoMensagemColeta">
+          <span class="tituloFragmento">FRAGMENTO DE ALMA</span>
+          <span class="subtituloFragmento">ABSORVIDO</span>
+        </div>
+
+        <!-- DETALHE DECORATIVO -->
+        <div class="detalheMensagemFragmento"></div>
+      </div>
+
+      <!-- DIÁLOGO CINEMATOGRÁFICO -->
+
+      <div id="dialogoImani">
+        <!-- RETRATO DA PERSONAGEM -->
+        <div id="retratoDialogo"></div>
+
+        <!-- CONTEÚDO DO DIÁLOGO -->
+        <div id="conteudoDialogo">
+          <!-- NOME DA PERSONAGEM -->
+          <div id="nomeDialogo">
+            <span>IMANI</span>
+          </div>
+
+          <!-- FALA DA PERSONAGEM -->
+          <p id="textoDialogo"></p>
+
+          <!-- INDICADOR DE CONTINUAÇÃO -->
+          <span id="indicadorDialogo">◆</span>
+        </div>
+      </div>
+
+      <!-- TRANSIÇÃO ENTRE ÁREAS -->
+      <div id="transicaoArea"></div>
+
+      <!-- FLASHES DE MEMÓRIA -->
+      <div id="memoriasFinais">
+        <div id="imagemMemoria"></div>
+        <div id="textoMemoria"></div>
+      </div>
+    </div>
+
+    <!-- 4. TELA DE FIM DE JOGO -->
+
+    <div id="telaFim">
+      <h1 id="tituloFim"></h1>
+
+      <p id="mensagemFim"></p>
+
+      <button id="botaoReiniciar">JOGAR NOVAMENTE</button>
+    </div>
+
+    <!-- 5. JAVASCRIPT -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
